@@ -73,7 +73,7 @@
         /* Content Styling */
        .content {
     text-align: center;
-    background: rgba(0, 0, 0, 0.9); /* Reduced opacity */
+    background: rgba(0, 0, 0, 0.4); /* Reduced opacity */
     padding: 20px 40px; /* Horizontal padding */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
@@ -191,7 +191,7 @@
           max-height: 95%; /* Further ensure no scrolling on mobile */
         padding: 5px 10px; /* Reduce padding for better fit */
 		padding-right: 25px;
-        background: rgba(0, 0, 0, 0.85); /* Darker background for readability */
+        background: rgba(0, 0, 0, 0.4; /* Darker background for readability */
         border-radius: 10px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
     }
@@ -241,6 +241,17 @@
     }
 }
 
+@media (max-width: 768px) {
+    .content {
+        padding: 10px 20px; /* Reduce padding */
+    }
+    h1 {
+        font-size: 2rem; /* Adjust heading size */
+    }
+    .button {
+        padding: 10px 20px; /* Reduce button size */
+    }
+}
 
 
     </style>
