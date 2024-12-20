@@ -49,14 +49,14 @@
     <style>
         /* Global Reset */
         body, html {
-            margin: 0;
+           margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden; /* Prevent unwanted scrolling */
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    font-family: Arial, sans-serif;
+    color: white;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: hidden; /* Allow vertical scrolling */
 	
 	
 	
@@ -73,10 +73,6 @@
     min-height: 100vh; /* Ensure body takes up full height for scrolling */
     padding: 20px 0; /* Add spacing at the top and bottom */
         }
-		
-		
-  
-   
 
         /* Content Styling */
        .content {
@@ -91,10 +87,12 @@
     display: flex; /* Use flexbox */
     flex-direction: column; /* Keep content in a vertical layout */
     align-items: center; /* Center the form content horizontally */
-	 max-height: 90vh; /* Ensure it fits the viewport */
+	
+	
+	
+	max-height: 100vh; /* Prevent it from exceeding the screen height */
     overflow-y: auto; /* Allow scrolling within the content only if necessary */
-    padding: 10px 20px; /* Compact padding */
-	 box-sizing: border-box; /* Ensure padding doesn't add to width/height */
+    padding: 10px; /* Compact padding */
 }
 @media (min-width: 1024px) {
     .content {
@@ -195,16 +193,11 @@
 		
 	
      @media (max-width: 768px) {
-	
-    body, html {
-        overflow-y: auto; /* Allow scrolling on mobile */
-    
-
 	 
     .content {
 	
         width: 90%; /* Keep the content container responsive */
-         max-height: 95vh; /* Ensure content fits comfortably */
+        max-height: 95%; /* Ensure the container does not overflow the viewport */
         overflow-y: auto; /* Enable internal scrolling if needed */
           max-height: 95%; /* Further ensure no scrolling on mobile */
         padding: 5px 10px; /* Reduce padding for better fit */
@@ -214,6 +207,16 @@
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
     }
 	
+	h1 {
+        font-size: 2rem; /* Reduce size */
+    }
+    .tagline {
+        font-size: 1rem; /* Compact tagline */
+    }
+    .button {
+        font-size: 1rem; /* Adjust button text */
+        padding: 10px; /* Smaller button */
+    }
 
     h1 {
         font-size: 2rem; /* Slightly reduce the heading size */
@@ -221,7 +224,7 @@
     }
 
     .tagline {
-        font-size: 1rem; /* Reduce tagline size */
+        font-size: 1.2rem; /* Reduce tagline size */
         margin-bottom: 15px;
     }
 
@@ -233,10 +236,9 @@
 
     .button {
    
-      font-size: 1rem; /* Adjust button text */
-        padding: 10px; /* Smaller button */
    
-       
+   
+        padding: 12px 20px; /* Adjust padding for better fit */
         width: 60%; /* Set a percentage width for the button */
         margin: 10px auto; /* Center the button */
         text-align: center;
@@ -258,9 +260,6 @@
     button {
         font-size: 1rem; /* Reduce submit button font size */
         padding: 12px 20px; /* Adjust padding */
-    }
-	button, input, textarea {
-        font-size: 0.9rem; /* Slightly smaller font sizes */
     }
 }
 
