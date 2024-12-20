@@ -57,6 +57,10 @@
     color: white;
     overflow-x: hidden; /* Prevent horizontal scrolling */
     overflow-y: hidden; /* Allow vertical scrolling */
+	
+	
+	
+
         }
 
         /* Background Styling */
@@ -74,7 +78,7 @@
        .content {
     text-align: center;
     background: rgba(0, 0, 0, 0.4); /* Reduced opacity */
-    padding: 20px 40px; /* Horizontal padding */
+  
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
     max-width: 800px; /* Wider background area */
@@ -83,6 +87,12 @@
     display: flex; /* Use flexbox */
     flex-direction: column; /* Keep content in a vertical layout */
     align-items: center; /* Center the form content horizontally */
+	
+	
+	
+	max-height: 100vh; /* Prevent it from exceeding the screen height */
+    overflow-y: auto; /* Allow scrolling within the content only if necessary */
+    padding: 10px; /* Compact padding */
 }
 @media (min-width: 1024px) {
     .content {
@@ -196,14 +206,15 @@
         border-radius: 10px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
     }
+	
 
     h1 {
-        font-size: 2.2rem; /* Slightly reduce the heading size */
+        font-size: 2rem; /* Slightly reduce the heading size */
         margin-bottom: 10px; /* Add spacing below the heading */
     }
 
     .tagline {
-        font-size: 1.2rem; /* Reduce tagline size */
+        font-size: 1rem; /* Reduce tagline size */
         margin-bottom: 15px;
     }
 
@@ -215,9 +226,10 @@
 
     .button {
    
+      font-size: 1rem; /* Adjust button text */
+        padding: 10px; /* Smaller button */
    
-   
-        padding: 12px 20px; /* Adjust padding for better fit */
+       
         width: 60%; /* Set a percentage width for the button */
         margin: 10px auto; /* Center the button */
         text-align: center;
